@@ -17,8 +17,8 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :r uby
-gem 'mysql2', '~> 0.4.8'
+# gem 'therubyracer', platforms: :ruby
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -28,12 +28,15 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem 'mysql2', '~> 0.4.8'
 gem 'sorcery', '~> 0.11.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
-gem 'execjs'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails', '~> 4.3.1'
+gem 'rails-assets-tether', '>= 1.1.0'
+gem 'sprockets-rails', '~> 3.2.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -1,0 +1,85 @@
+@import "bootstrap";
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/glyphicons-halflings-regular.woff') format('woff'),
+  url('../assets/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.signup-field, .signin-field {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.signup {
+  padding-top: 15%;
+  width: 380px;
+  height: 623px;
+}
+.signin {
+  padding-top: 25%;
+  width: 380px;
+  height: 500px;
+}
+.signup-title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #999;
+}
+.signup-text{
+  font-size: 1.1em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #999;
+}
+
+.signup-submit, .signin-submit {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.signup-inner, .signin-inner{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: #e6e6e6 solid 1px;
+}
+.signup-inner-bottom, .signin-inner-bottom {
+  background-color: #fff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border: #e6e6e6 solid 1px;
+}
+
+.frame {
+  height: 100%;
+  width: 100%;
+}
+
