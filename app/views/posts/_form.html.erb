@@ -11,17 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
+  <div class="field post-title">
+    <%= form.label :제목 %>
     <%= form.text_field :title, id: :post_title %>
   </div>
 
-  <div class="field">
-    <%= form.label :content %>
+  <div class="field post-content">
+    <%= form.label :내용 %>
     <%= form.text_area :content, id: :post_content %>
   </div>
 
+    <div class="field post-img">
+      <%= form.label :사진 %>
+      <%= form.file_field :img_path, class: 'form-control' %>
+    </div>
+
+
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "등록", class: 'btn btn-primary'%>
   </div>
 <% end %>

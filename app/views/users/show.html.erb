@@ -1,17 +1,13 @@
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Crypted password:</strong>
-  <%= @user.crypted_password %>
-</p>
-
-<p>
-  <strong>Salt:</strong>
-  <%= @user.salt %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="row justify-content-center">
+  <div class= "col-xs-10 col-sm-10 col-md-8 col-lg-6">
+<%=image_tag @post.img_path, style:'width:100%; height:auto;'%>
+  <div class="'card-body">
+    <h4 class="card-body"> <%=i @post.title%></h4>
+    <p class="card-text"> <%=i @post.content%></p>
+    <p class="card-text"> <small class="text-muted">
+      <%= "#{time_ago_in_words(@post.created_at)} 전" %></small>
+    </p>
+   </div>
+</div>
+</div>
+</div>
