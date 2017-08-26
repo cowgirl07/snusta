@@ -1,5 +1,5 @@
 <div class = "col-xs-12 col-md-12 col-sm-12 col-lg-12" style="padding-left:10%; padding-right: 10%;">
-  <%= @posts.each do |post|%>
-  <%= render 'post', post: post %>
-      <%end%>
+  <% @posts.each do |post|%>
+    <%= render 'post', post: post %>
+  <%end%>
 </div>
